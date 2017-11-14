@@ -1,0 +1,362 @@
+/*******************************/
+/* bootstrap.css customization */
+body {
+     height: 100%; 
+     background:#EFF3F6;
+}
+
+a {
+     color: rgb(16, 88, 155);
+}
+
+a:hover, a:focus {
+     color:blue; 
+     text-decoration: none; 
+     outline:none;
+}
+
+.nav {
+     float:right;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: lightgrey;
+  color:#000;
+}
+
+.nav-pills > li > a {
+  color: #fff;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color:deepskyblue;
+}
+
+.navbar {
+  min-height: 0;
+}
+
+.navbar-inverse {
+  background-color: steelblue;
+  border-color:transparent;
+}
+
+@media print { 
+    a, a:visited {
+         text-decoration: none;
+    }
+}
+/*******************************/
+
+/* TinyMCE */
+div.mce-fullscreen { 
+    top: 50px!important;
+}
+
+/*---------Header-----------*/
+.header{
+	height:40px;
+}
+
+.header #logo{
+	float:left;
+	margin-left:5%;
+	width:33%;
+	position:relative;
+}
+
+.header #logo #logo_img{
+	background: url(/images/anotepad.png) no-repeat;
+	width:40px;
+	height:40px;
+	float:left;
+}
+.header #logo .container{
+	width:100%;
+}
+
+
+.header #logo a{
+ font:bold 1.8em comic sans ms,sans-serif;
+ color:#fff;
+ line-height:40px;
+ /*padding: 10px 15px;*/
+}
+.header #logo #subTitle{
+	font:bold 1em/40px comic sans ms,sans-serif;
+	color:#fff;
+	vertical-align:2px;
+} 
+/*------end-------*/
+
+/*-------------BODY---------------*/
+.containerMain{
+	margin-top:2%;
+	min-height:305px;
+	/*min-height:305px;*/
+	/*padding-bottom:250px;
+	height:100%;*/
+}
+
+.containerMain .displayContent{
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background: white;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #333 inset;
+    color: #666;
+    padding:3% 5%;
+    outline: none;
+    /*width:80%;
+    margin:2% 0% 0% 10%;*/
+}
+.title,.textarea
+{
+	font-size:18px !important;
+}
+.title{
+font-weight: bold;
+}
+.disabled{
+	pointer-events: none;
+	cursor: not-allowed;
+	box-shadow: none;
+	opacity: 0.65;
+}
+
+/*Display Notes*/ 
+.notes{
+	margin:2% 0%;
+}
+
+.notes .my_notes{
+	margin:1% 0%;
+}
+
+/*Notes*/
+ul.saved_notes{
+	list-style: none;
+	list-style-position: inside;
+	margin:1em 0 0 0; 
+	padding: 0;
+    overflow: hidden;
+}
+
+ul.saved_notes li{
+    padding: 8px 2px 8px 0px;
+    font-size:16px;
+	float:left;
+	width:33%;
+	margin-bottom:0.5em;
+}
+
+ul.folder-list{
+	list-style: none;
+	list-style-position: inside;
+	margin:1em 0 0 0; 
+	padding: 0; 
+}
+
+ul.folder-list li{
+	background:url('/Images/folder.png') no-repeat;
+ 	padding: 8px 2px 8px 32px;
+    font-size:16px;
+	margin-bottom:0.5em;
+}
+
+ul.folder-list li.active {
+    font-weight: bold;
+}
+
+ul.folder-list li.highlight {
+    background-color: #dddddd;
+}
+
+ul.folder-option{
+	list-style: none;
+	list-style-position: inside;
+	margin:0 0 0 0; 
+	padding: 0; 
+}
+
+ul.folder-option li{
+	background:url('/Images/folder_add.png') no-repeat;
+	padding: 8px 2px 8px 32px;
+    font-size:16px;
+	margin-bottom:0.5em;
+}
+/*end notes*/
+.topLinks a{
+	padding:0.5%;
+}
+.topLinks a:hover,a:focus{
+	background:#428bca;
+	color:white;
+}
+
+.public {font-size:12px; font-weight:normal; color:#fff; background:#006FB9; padding:2px 4px; position:relative; top:5px; margin-left:-1%;}
+.public a {color:#fff; text-decoration:none; font-weight:bold;}
+.public a {outline:none;}
+
+
+#view_content #note_content{
+	font-size:18px;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	background: ghostwhite;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    color: #000;
+    padding:1%;
+    outline: none;
+    margin:1% 0%;
+}
+
+#view_content #note_content .plaintext {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:18px;
+    border: 0px;
+    color: #000;
+    background-color: ghostwhite;
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+}
+
+#view_content .public{
+	top:-2px;
+	margin-left: 0%;
+}
+
+.header-ads {
+    margin: 0 0 10px 0;
+    max-width: 730px;
+}
+
+.footer-ads {
+    margin: 30px 0 20px 0;
+    max-width: 730px;
+}
+/*---------------- Body End----------*/
+
+/*-------------- Footer------------- */
+.footer {
+	clear:both; 
+	color:#999;
+	background: steelblue;
+	/*z-index: 9999;
+	top: 0px;
+	left: 0px;*/
+	 /*position:relative;
+	 width:100%;
+	 bottom:0%;
+	 height:250px;*/
+}
+.footer a {
+	color:#FFF;
+	text-decoration:none;
+	padding:2px;
+	font:bold 13px comic sans ms,sans-serif;/*added by Sneha on 28 feb*/
+	color: white;	
+	/*text-align: center;*/
+}
+.footer a:hover {background:#fff; color:#000;}
+
+.footer p{
+	text-align: center;
+}
+
+.footer .stats{
+	font:bold 16px comic sans ms,sans-serif;
+	color:#2D5B89;
+	background:white;
+	display:inline-block;
+	padding:0.5% 1%;
+	text-align: center;
+	margin-top:1%;
+}
+
+/*------------ footer end----------*/
+
+.text-primary{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+/* Manage folder */
+#manageFolderContent .row {
+    margin: 0 0 1em 0;
+}
+
+@media only screen and (min-width: 240px) and (max-width:767px){
+	ul.saved_notes li{
+		width:100%  !important;
+	}
+	
+	#logo_img{
+		display:none;
+	}
+	
+	#logo .container-fluid
+	{
+		margin:0%;
+		padding:0%;
+	}
+	
+	.containerMain{
+		margin-top:7% !important;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width:979px){
+	.header #logo{
+		margin-left:0%;
+		width:30%;
+		
+	}
+	.header #logo a{
+		font-size:1.3em !important;
+	}
+	
+}
+
+@media only screen and (max-width: 979px){
+	 #subTitle{
+		display:none !important;
+	}
+}
+
+@media only screen and (min-width: 980px) and (max-width:1279px){
+	.header #logo{
+		margin-left:1%;
+		width:40%;
+	}
+	.header #logo .container{
+		padding:0%;
+	}
+	.header #logo a{
+		font-size:1.3em !important;
+	}
+}
+
+@media only screen and (min-width: 1280px){
+	.header #logo{
+		margin-left:5%;
+		width:40%;
+	}
+}
+
+/*height only for chrome browser*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    /* webkit specific CSS */
+    .containerMain{
+    	min-height:385px;
+    }
+}
